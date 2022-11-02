@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teller</title>
+</head>
+<body>
+    <div id="divSomViser"></div>
+    <button onclick="plusKnapp()">bare bra</button>
+    <button onclick="minusKnapp()">ikke bra</button>
+
+    <script>
+        var divSomViserDiv = document.getElementById('divSomViser');
+        var visHer = 0;
+
+        function plusKnapp(){
+            visHer ++;
+            divSomViserDiv.innerHTML = visHer;
+        }
+
+        function minusKnapp(){
+            visHer --;
+            divSomViserDiv.innerHTML = visHer
+        }
+
+    </script>
+</body>
+</html>
